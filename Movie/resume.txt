@@ -1,0 +1,98 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage[utf8]{inputenc}  
+\moderncvtheme[blue]{classic}     
+\nopagenumbers{}                             
+\AtBeginDocument{\recomputelengths}
+%\usepackage[french]{babel} 
+
+
+%\renewcommand{\listitemsymbol}{-~}  % change the symbol for lists
+% color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+
+% adjust the page margins
+\usepackage[top=1.1cm, bottom=1.1cm, left=2cm, right=2cm]{geometry}
+% Largeur de la colonne pour les dates
+\setlength{\hintscolumnwidth}{2.9cm}
+
+\setlength{\makecvtitlenamewidth}{9cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\firstname{Thomas}
+\familyname{Jalabert}
+\title{Étudiant ingénieur en Informatique}                        
+\address{3, rue Soutrane}{06560 Valbonne}   
+\mobile{06.51.06.82.19}                   
+%\phone{+33(0)4.76.24.10.36}       
+\email{thom.jalabert@gmail.com} 
+\extrainfo{21 ans - Permis B}
+\photo[64pt][0pt]{pix2.png}                  % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+
+\AfterPreamble{\hypersetup{
+  pdfauthor={Thomas Jalabert},
+  pdftitle={CV de Thomas Jalabert},
+  pdfsubject={CV détaillé pour Thomas Jalabert},
+  urlcolor=blue,
+}}
+
+\begin{document}
+
+\makecvtitle
+
+\section{Formation}
+\cventry{2015--Aujourd'hui}{École d'ingénieurs en Science Informatique}{\href{http://www.polytechnice.fr/informatique.html}{Polytech'Nice}}{Sophia-Antipolis}{}{\begin{itemize}
+    \item 6 mois en Erasmus à \href{https://liu.se/?l=en}{Linköping University, Suède.}
+ \end{itemize}}  % arguments 3 to 6 can be left empty
+
+\cventry{2013--2015}{DUT - Informatique}{\href{http://www.iut2.upmf-grenoble.fr/formations/departements/departement-informatique-/dut-informatique-grenoble--5400.htm}{IUT2 - Université Pierre Mendès-France}}{Grenoble}{}{}
+\cventry{2009--2013}{Baccalauréat Scientifique}{\href{http://www.itec-boisfleury.fr/}{Lycée ITEC Boisfleury}}{Corenc}{\textit{Mention Bien}}{}
+
+\section{Projets}
+
+\cventry{Février 2015}{The Lost and The Ghost (Jeu en C++)}{Game Jam interne IUT}{}{13 projets}{}
+\cventry{Novembre 2014-Avril 2015}{Travelvoyage (Site de voyage en montagne)}{Projet interne IUT}{15 projets}{}{
+\begin{itemize}
+    \item Prix du meilleur projet commercial et Second prix du meilleur projet technique.
+ \end{itemize}}
+\cventry{Mars 2014}{Monopoly}{Projet interne IUT}{}{Une semaine. Réalisé en Java avec la bibliothèque SWING}{}
+
+\section{Compétences}
+
+\cvitem{Langages}{C/C++, Java, Python, HTML/CSS, PHP, Javascript, SQL, XML, \LaTeX, Bash}
+\cvitem{Logiciels}{Visual Studio, Eclipse, NetBeans, Code::Blocks, Visual Paradigm, Doxygen, Git}
+
+\cvitem{Français}{Langue Maternelle}
+\cvitem{Anglais}{Lu, écrit, parlé}
+\cvitem{Allemand}{Notions}
+
+\cvitem{Comportementales}{Travail en équipe, Adaptation, Flexibilité, Autonomie}
+
+
+\section{Expériences professionnelles}
+\cventry{Avril--Juin 2015}{Développeur stagiaire}{\href{http://lgge.osug.fr/}{Centre Scientifique et Technique du Bâtiment}}{Saint-Martin-D'Hères}{10 semaines}{Développement de plusieurs modules du logiciel d'acoustique environnemental MithraSON.}
+\cventry{Août 2012 et Juillet 2013}{Agent d'entretien}{Piscine municipale}{Eybens}{Un mois (2 fois)}{}
+\cventry{Juillet 2011}{Animateur pour enfants}{MJC}{Saint-Martin-d'Hères}{Un mois}{}
+
+
+\section{Centres d'intérêt}
+
+\cvitem{Loisir}{Musique, Littérature (Science-Fiction), Jeux vidéos}
+\cvitem{Sport}{Badminton, Escalade}
+
+\cvitem{Associatif}{
+\begin{itemize}
+\item Membre de l'association What's your game qui gère des tournois de jeux vidéos en ligne et en salle.  \item Donneur de sang. 
+\item Calcul bénévole avec \href{https://boinc.berkeley.edu/}{BOINC} et \href{http://www.gridcoin.us/}{Gridcoin}.
+\end{itemize}
+}
+               
+\end{document}
+
